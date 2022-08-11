@@ -1,0 +1,59 @@
+CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.
+CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+A CSS rule consists of a selector and a declaration block.
+	html {
+		background-color: red;
+		font-size: 12px;
+	}
+Note: Do not add a space between the property value and the unit:
+	Incorrect (space): margin-left: 20 px;
+	Correct (nospace): margin-left: 20px;
+
+CSS can be added to HTML documents in 3 ways:
+	Inline CSS - by using the style attribute inside HTML elements
+	Internal CSS - by using a <style> element in the <head> section
+	External CSS - by using a <link> element to link to an external CSS file
+	
+CSS Selectors:
+	CSS selectors are used to "find" (or select) the HTML elements you want to style.
+	We can divide CSS selectors into five categories:
+		Simple selectors (select elements based on name, id, class)
+		Combinator selectors (select elements based on a specific relationship between them)
+		Pseudo-class selectors (select elements based on a certain state)
+		Pseudo-elements selectors (select and style a part of an element)
+		Attribute selectors (select elements based on an attribute or attribute value)
+		
+	Selector: #id, Example: #firstname, Example description: Selects the element with id="firstname"
+	Selector: .class, Example: .intro, Example description: Selects all elements with class="intro"
+	Selector: element.class, Example: p.intro, Example description: Selects only <p> elements with class="intro"
+	Selector: *, Example: *, Example description: Selects all elements
+	Selector: element, Example: p, Example description: Selects all <p> elements
+	Selector: element,element,.., Example: div, p, Example description: Selects all <div> elements and all <p> elements
+
+CSS Properties:
+	
+	Property: Value;
+	color:
+	background-color:
+	height:
+	width:
+	border:
+	visibility:
+	text-align:
+	float:left/right
+	
+Cascading Order:
+	What style will be used when there is more than one style specified for an HTML element?
+	All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+		Inline style (inside an HTML element)
+		External and internal style sheets (in the head section)
+		Browser default
+	So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+	
+CSS Box Model:
+
+CSS Comments:
+	A CSS comment is placed inside the <style> element, and starts with /* and ends with */
+	
+Website Layout:
+	A website is often divided into headers, navigation menus, content and a footer.
