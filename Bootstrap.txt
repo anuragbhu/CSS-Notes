@@ -1,0 +1,16 @@
+Bootstrap 5 is the newest version of Bootstrap, which is the most popular HTML, CSS, and JavaScript framework for creating responsive, mobile-first websites.
+Bootstrap 5 is completely free to download and use!
+The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to JavaScript instead of jQuery.
+Bootstrap is a free front-end framework for faster and easier web development
+Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+Bootstrap also gives you the ability to easily create responsive designs
+
+What is Responsive Web Design?
+  Responsive web design is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops.
+  
+Advantages of Bootstrap:
+  Easy to use, Responsive features, Browser compatibility etc.
+
+Where to Get Bootstrap 5?
+  Include Bootstrap 5 from a CDN (Content Delivery Network) --- cache friendly ---
+  Download Bootstrap 5 from getbootstrap.com
