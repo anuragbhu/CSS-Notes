@@ -8,6 +8,10 @@ A CSS rule consists of a selector and a declaration block.
 Note: Do not add a space between the property value and the unit:
 	Incorrect (space): margin-left: 20 px;
 	Correct (nospace): margin-left: 20px;
+	
+Tip: The word cascading means that a style applied to a parent element will also apply to all children elements within the parent. 
+	 So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get 
+	 the same color (unless you specify something else)!
 
 CSS can be added to HTML documents in 3 ways:
 	Inline CSS - by using the style attribute inside HTML elements
@@ -37,10 +41,15 @@ CSS Properties:
 	background-color:
 	height:
 	width:
-	border:
-	visibility:
-	text-align:
-	float:left/right
+	border: 2px solid powderblue;
+	visibility: hidden; --- element will be hidden from the webpage but still takes up space ---
+	display: none; --- the element will be hidden ---
+	float:left/right;
+	font-family: courier;
+	font-size: 160%;
+	margin: 50px;
+	text-align:center;
+	
 	
 Cascading Order:
 	What style will be used when there is more than one style specified for an HTML element?
@@ -51,9 +60,89 @@ Cascading Order:
 	So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
 	
 CSS Box Model:
-
+	
+	
+	
 CSS Comments:
 	A CSS comment is placed inside the <style> element, and starts with /* and ends with */
 	
 Website Layout:
-	A website is often divided into headers, navigation menus, content and a footer.
+	A website is often divided into headers, navigation menus, content, aside (Sidebar content of the page) and a footer.
+	
+What are Pseudo-classes? (False Classes)
+	A pseudo-class is used to define a special state of an element.
+	For example, it can be used to:
+		Style an element when a user mouses over it
+		Style visited and unvisited links differently
+		
+		div:hover {
+		  background-color: blue;
+		}
+		
+What are Pseudo-Elements? (False Elements)
+	A CSS pseudo-element is used to style specified parts of an element.
+	For example, it can be used to:
+		Style the first letter, or line, of an element
+		Insert content before, or after, the content of an element
+		
+		p::first-line {
+		  color: #ff0000;
+		  font-variant: small-caps;
+		}
+		
+Notice: 
+	The double colon notation - ::first-line versus :first-line
+	The double colon replaced the single-colon notation for pseudo-elements in CSS3. 
+	This was an attempt from W3C to distinguish between pseudo-classes and pseudo-elements.
+	
+CSS Attribute Selectors:
+	It is possible to style HTML elements that have specific attributes or attribute values.
+	The [attribute] selector is used to select elements with a specified attribute.
+	The following example selects all <a> elements with a target attribute:
+		
+		a[target] {
+		  background-color: yellow;
+		}
+		
+		a[target="_blank"] {
+		  background-color: yellow;
+		}
+
+
+CSS :nth-child() Selector:
+	The :nth-child(n) selector matches every element that is the nth child of its parent.
+		/* Selects the second li element in a list */
+		li:nth-child(2) {
+		  background: lightgreen;
+		}
+
+		/* Selects every third element among any group of siblings */
+		:nth-child(3) {
+		  background: yellow;
+		}
+		
+		/* The index of the first child is 1 */
+		p:nth-child(odd) {
+		  background: red;
+		}
+		
+		/* Using a formula (an + b). Description: a represents a cycle size, n is a counter (starts at 0), and b is an offset value. */
+		p:nth-child(3n+0) {
+		  background: red;
+		}
+
+SASS is Syntactically Awesome Style Sheets:
+	Sass is a CSS pre-processor.
+	Sass reduces repetition of CSS and therefore saves time.
+	
+	/* Define standard variables and values for website */
+	$bgcolor: lightblue;
+	$textcolor: darkblue;
+	$fontsize: 18px;
+
+	/* Use the variables */
+	body {
+	  background-color: $bgcolor;
+	  color: $textcolor;
+	  font-size: $fontsize;
+	}
