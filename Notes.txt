@@ -157,3 +157,30 @@ SASS is Syntactically Awesome Style Sheets:
 	  color: $textcolor;
 	  font-size: $fontsize;
 	}
+	
+CSS vs CSS3
+	CSS is very slow as compared to CSS3	Whereas CSS3 is faster than CSS.
+	CSS is memory intensive.	CSS3 memory consumption is low as compared to CSS.
+	CSS is capable of positioning texts and objects. On the other hand, CSS3 is capable of making the web page more attractive and takes less time to create. CSS3 is backward compatible with CSS. 
+	Responsive designing is not supported in CSS. CSS3 is the latest version, hence it supports responsive design.
+	
+CSS units – %, em, rem, px
+	%: 
+	The % unit is used to set the font-size relative to the current font-size. 
+	
+	Em:
+	An Em is equal to the computed font-size of that element’s parent. For example, If there is a div element defined with font-size: 16px then for that div and for its children 1em = 16px.
+
+	Rem:
+	rem values are relative to the root html element, not to the parent element. That is, If font-size of the root element is 16px then 1 rem = 16px for all elements.
+
+	Px:
+	Pixels are the easiest measurement to use. pixels may be good at spacing and layout but are not good fit for font-size.  It defines the font-size in terms of pixels. (96px = 1in)
+	
+CSS Layout - The position Property
+	There are five different position values:
+		static (default) -  is not positioned in any special way; it is always positioned according to the normal flow of the page
+		relative - An element with position: relative; is positioned relative to its normal position.
+		fixed - An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+		absolute - An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+		sticky - An element with position: sticky; is positioned based on the user's scroll position.
